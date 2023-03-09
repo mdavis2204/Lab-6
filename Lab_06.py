@@ -1,4 +1,3 @@
-
 password = ""
 
 def decode(password_in):
@@ -25,20 +24,20 @@ def main():
     password = ""
 
     while True:
-        print("Menu \n"
+        print("\nMenu \n"
               "------------- \n"
               "1. Encode \n"
               "2. Decode \n"
-              "3. Quit \n")
+              "3. Quit ")
 
         user_in = input("\nPlease enter an option: ")
 
         if user_in[0] == "1":
             password = encode()
+            print("Your password has been encoded and stored! ")
         elif user_in[0] == "2":
             print(f"The encoded password is {password}, and the original password is {decode(password)}.")
         elif user_in[0] == "3":
             break
 
-
-print(decode("12345678"))
+main()
