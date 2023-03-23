@@ -8,7 +8,7 @@ def decode(password_in):
         elif int(password_in[i]) >= 0 and int(password_in[i]) <= 2:
             password_out += str(int(password_in[i]) + 7)
 
-    return password_out
+    return password_out # Test
 
 def encode():
     encoded = ""
